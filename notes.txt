@@ -1,0 +1,34 @@
+1. Create a Next.js Project:
+
+
+npx create-next-app@latest my-blog
+cd my-blog
+
+2.Install Supabase Client:
+
+npm install @supabase/supabase-js
+
+3. Set Up Supabase Client:
+
+Create a new file named supabase.ts in the lib folder
+// lib/supabase.ts
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = 'YOUR_SUPABASE_URL'; // Get from your Supabase project settings
+const supabaseAnonKey = 'YOUR_ANON_KEY'; // Get from your Supabase project settings
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+
+4.: Create the Home Page
+Create index.tsx:
+Create a file pages/index.tsx:
+
+5.Create the Create Post Page
+Create create-post.tsx:
+Create a file pages/create-post.tsx:
+
+6.: Run Your Application
+Start the Development Server:
+npm run dev
+
